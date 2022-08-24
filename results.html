@@ -28,7 +28,7 @@ document.getElementById("goodcount").innerHTML = "Good Count: " + localStorage.g
 document.getElementById("middlecount").innerHTML = "Middle Count: " + localStorage.getItem("middlecount") + " Click(s)";
 </script>
 <script>
-document.getElementById("badcount").innerHTML = "Middle Count: " + localStorage.getItem("badcount") + " Click(s)";
+document.getElementById("badcount").innerHTML = "Bad Count: " + localStorage.getItem("badcount") + " Click(s)";
 </script>
 <script>
         const loader = document.querySelector(".loader");
@@ -43,5 +43,10 @@ document.getElementById("badcount").innerHTML = "Middle Count: " + localStorage.
                        ,1500);
           }
     </script>
+<script>
+setTimeout(() => {
+  document.location.reload();
+}, 20000);
+</script>
 </body>
 </html>
