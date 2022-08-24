@@ -14,11 +14,8 @@
     <div class="loader">
         <div class="ring">
         </div></div>
-<div id="counters">
-<p id="good-result"></p>
-</div>
+
 <div class="content">
-<button onclick="showCounts()">Try it</button>
 <p class="title">Rate your experience.</p>
 <div class="buttons">
 <p class="good" onclick="goodCounter()">&#128512;</p> <p class="meh" onclick="middleCounter()">&#128528;</p> <p class="horrible" onclick="badCounter()">&#128545;</p></div>
@@ -48,24 +45,30 @@ function goodCounter() {
     } else {
       localStorage.goodcount = 1;
     }
-    document.getElementById("good-result").innerHTML = "Good Clicks: " + localStorage.goodcount + " time(s).";
-  document.getElementById("good-result").style.display = "none";
-
-  } else {
-    document.getElementById("good-result").innerHTML = "Sorry, your browser does not support web storage...";
   }
 }
 </script>
 <script>
-function showCounts() {
-  var x = document.getElementById("counters");
-  var y = document.getElementById("good-result");
-  if (x.style.display === "none", y.style.display === "none" ) {
-    x.style.display = "block";
-    y.style.display = "block";
-  } else {
-    x.style.display = "none";
-    y.style.display = "none";
+function middleCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.middlecount) {
+      localStorage.middlecount
+          = Number(localStorage.middlecount)+1;
+    } else {
+      localStorage.middlecount = 1;
+    }
+  }
+}
+</script>
+<script>
+function badCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.badcount) {
+      localStorage.badcount
+          = Number(localStorage.badcount)+1;
+    } else {
+      localStorage.badcount = 1;
+    }
   }
 }
 </script>
