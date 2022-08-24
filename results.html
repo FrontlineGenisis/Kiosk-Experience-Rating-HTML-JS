@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Experience rating 
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css" media="screen" />
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+    <div class="loader">
+        <div class="ring">
+        </div></div>
+<div class="content">
+<p class="title">Local Results</p>
+<p id="goodcount"></p>
+<p id="middlecount"></p>
+<p id="badcount"></p>
+<p class="reset-instructions">To reset - clear cookies. <a href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform=Desktop#zippy=%2Cdelete-cookies-from-a-site">Help</a></p>
+</div>
+<script>
+document.getElementById("goodcount").innerHTML = "Good Count: " + localStorage.getItem("goodcount") + " Click(s)";
+</script>
+<script>
+document.getElementById("middlecount").innerHTML = "Middle Count: " + localStorage.getItem("middlecount") + " Click(s)";
+</script>
+<script>
+document.getElementById("badcount").innerHTML = "Middle Count: " + localStorage.getItem("badcount") + " Click(s)";
+</script>
+<script>
+        const loader = document.querySelector(".loader");
+          window.onload = function(){
+            setTimeout(function(){
+              loader.style.opacity = "0";
+              setTimeout(function(){
+                loader.style.display = "none";
+              }
+                         , 500);
+            }
+                       ,1500);
+          }
+    </script>
+</body>
+</html>

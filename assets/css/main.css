@@ -107,3 +107,9 @@ display: inline-block;
 margin-top: 0px;
 display: inline-block;
 }
+.count-txt {
+display: inline-block;
+}
+#good-count {
+display: inline-block;
+}
