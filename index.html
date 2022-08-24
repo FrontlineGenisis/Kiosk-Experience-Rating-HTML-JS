@@ -1,0 +1,75 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Experience rating 
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css" media="screen" />
+
+</head>
+<body>
+    <div class="loader">
+        <div class="ring">
+        </div></div>
+<div id="counters">
+<p id="good-result"></p>
+</div>
+<div class="content">
+<button onclick="showCounts()">Try it</button>
+<p class="title">Rate your experience.</p>
+<div class="buttons">
+<p class="good" onclick="goodCounter()">&#128512;</p> <p class="meh" onclick="middleCounter()">&#128528;</p> <p class="horrible" onclick="badCounter()">&#128545;</p></div>
+    <div id="result"></div>
+
+</div>
+ <script>
+        const loader = document.querySelector(".loader");
+          window.onload = function(){
+            setTimeout(function(){
+              loader.style.opacity = "0";
+              setTimeout(function(){
+                loader.style.display = "none";
+              }
+                         , 500);
+            }
+                       ,1500);
+          }
+    </script>
+</body>
+<script>
+function goodCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.goodcount) {
+      localStorage.goodcount
+          = Number(localStorage.goodcount)+1;
+    } else {
+      localStorage.goodcount = 1;
+    }
+    document.getElementById("good-result").innerHTML = "Good Clicks: " + localStorage.goodcount + " time(s).";
+  document.getElementById("good-result").style.display = "none";
+
+  } else {
+    document.getElementById("good-result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function showCounts() {
+  var x = document.getElementById("counters");
+  var y = document.getElementById("good-result");
+  if (x.style.display === "none", y.style.display === "none" ) {
+    x.style.display = "block";
+    y.style.display = "block";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+  }
+}
+</script>
+</html>

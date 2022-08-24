@@ -16,6 +16,7 @@ margin:0;
 -moz-user-select:none;
 -ms-user-select:none;
 user-select:none; 
+overflow: hidden;
 }
 .loader {
 position:fixed;
@@ -80,6 +81,11 @@ margin-bottom: 19px;
 margin-top: 0px;
 margin-bottom: 0px;
 font-size: 100px;
+}
+.buttons p {
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
 }
 .buttons p:hover {
   transform: scale(1.1);
