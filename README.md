@@ -8,7 +8,7 @@
 <p align="center"><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/frontlinegenisis/Kiosk-Experience-Rating-HTML-JS?color=5a9abd&logoColor=5a9abd&style=for-the-badge"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/frontlinegenisis/Kiosk-Experience-Rating-HTML-JS?color=5a9abd&style=for-the-badge"> <a href="https://validator.nu/?doc=https://js-rating.project.thefrontlinegenisis.ml/"><img alt="W3C Validation" src="https://img.shields.io/w3c-validation/html?color=5a9abd&label=Validation&style=for-the-badge&targetUrl=https://js-rating.project.thefrontlinegenisis.ml/"></a> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/frontlinegenisis/Kiosk-Experience-Rating-HTML-JS?color=5a9abd&style=for-the-badge"> <img alt="GitHub" src="https://img.shields.io/github/license/frontlinegenisis/Kiosk-Experience-Rating-HTML-JS?color=%235a9abd&style=for-the-badge"> <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/frontlinegenisis/Kiosk-Experience-Rating-HTML-JS/main?color=%235a9abd&style=for-the-badge">
 </p>
 <br>
-<h2 align="center">📝 Recommended Setup</h2>
+<h2 align="center">🗃️ Recommended Setup</h2>
 <p align="center"><b>- Pre-info</b></p>
 <p align="center">To access the click count, go to /results.html on your client device version, eg: https://js-rating.project.thefrontlinegenisis.ml/results.html. <b>You can only view the amount of clicks on said device. For example, if you use the same webapp on another device, the click will not be synced between the devices, as they are stored using <a href="https://www.howtogeek.com/119458/htg-explains-whats-a-browser-cookie/">browser cookies.</a></b></p>
 <br>
